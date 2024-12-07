@@ -1,0 +1,259 @@
+#root {
+  box-sizing: border-box;  
+}
+
+.page{
+  margin: 0;
+  background: var(--primary-color);
+  padding-bottom: 5vh;
+  font-family: "Lora", serif;
+}
+
+.imgHorizontal,.invitation{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.invitation{
+  height: 78vh; 
+  display: flex; 
+  flex-direction: column;
+  color: var(--primary-color);
+  background-image: url('./assets/coupleTwo.png');
+  font-weight: 600;
+
+}
+.names{
+  text-align: center;
+  padding-top: 10vh; 
+  font-size: 2.7em;
+  filter: drop-shadow(0 0 0em black);
+  color: white;
+
+}
+
+.merried{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: 1em;
+  font-size: 1.3em;
+  font-weight: 500;
+  color: white;
+}
+
+
+.phrase{
+  font-size: 1em;
+  text-align: center;
+  padding-inline: .8em;
+  margin-top: 2vh;
+  color: #767969;
+}
+
+
+.date{
+  text-align: center;
+  font-size: 1.6em;
+  padding: 1.2em;
+  color: #767969;
+  font-weight: 400;
+}
+ 
+
+.countdown{
+  background: var(--secondary-color);
+}
+
+
+
+
+.weddingDetails{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8vh;
+  color: var(--fourth-color);
+  font-family: "Lora", serif;
+}
+.titlePages{
+  font-size: 1.8em;
+  font-weight: 400;
+  padding-bottom: 1em;
+}
+
+
+
+
+
+
+.container,.temple{
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+
+.container{
+  margin-top:    1.2em;
+  margin-bottom: 1.2em;
+  
+  background-image: url('./assets/logos.png');
+  background-size: cover;
+  height: 15vh;
+  width: 100%;
+} 
+ 
+
+
+.eventText{
+  font-size: 1.3em;
+  margin-bottom: 3vh;
+  text-align: center;
+  box-sizing: border-box;
+
+}
+.eventPlace{
+  font-size: .9em;
+  margin-bottom: 3vh;
+  text-align: center;
+
+}
+
+
+.invitationTemple{
+ 
+  color: #767969;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+}
+
+
+.templeContainer{
+  margin-top: 15vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);  
+  width: 100%;
+  margin-bottom: 3vh;
+}
+
+.templeDetail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: .5em;
+}
+
+
+.temple{
+  background-image: url('./assets/temple.png');
+  background-size: contain;
+  height: 20vh;
+}
+
+
+
+
+.buttonPage{
+  padding: .5em 1.4em ;
+  font-size: .9em;
+  border-radius: 1em;
+  border: none;
+  color: var(--primary-color);
+  font-weight: 500;
+  background:var(--secondary-color);
+}
+
+
+
+
+
+.banner{
+  margin-top: 10vh;
+  background: #a6af9a;
+  display: grid;
+  grid-template-columns: .5fr 1fr .5fr;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-inline: 1em;
+}
+
+.photoBanner,.leaveOne,.leaveTwo{
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.photoBanner{
+  height: 22vh;
+  background-image: url('./assets/arms.svg');
+  background-size: cover;
+}
+
+.leaveTwo,.leaveOne{
+  background-image: url('./assets/leaves.png');
+  background-size: 15vh;
+  background-position:  top left;
+}
+
+
+.leaveOne{
+  transform: rotate(180deg);
+
+}
+
+
+
+
+
+
+
+/* 
+
+
+
+.information{
+  text-align: center;
+  margin-bottom: 1.5em;
+  width: 50%;
+}
+
+
+.imgHorizontal{
+  background-image: url('./assets/coupleHorizontal.svg');
+  height: 20vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+
+.weddingConfirmation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+}
+
+
+.buttonGift{
+  padding: .7em 1.7em ;
+  font-size: .9em;
+  border-radius: .7em;
+  border: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  background:var(--fifth-color);
+}
+
+.buttonConfirmation{
+  margin-top: 5vh;
+  padding: 1em 2em;
+  font-size: 1.1em;
+  margin-inline: 1.5em;
+  border-radius: .8em;
+  font-weight: 500; 
+  border: none;
+  color: var(--primary-color);
+  background: var(--secondary-color); 
+} */

@@ -1,0 +1,31 @@
+.countdownPage{
+    background: var(--secondary-color);
+    padding: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    font-family: "Lora", serif;
+
+}
+
+.phrase{
+    font-size: 1em;
+    text-align: center;
+    color: #fff;
+
+}
+
+.chorometer{
+    text-align: center;
+    display: flex;
+    gap: 1em;
+    color: var(--third-color);
+    font-weight: 500;
+    font-size: 2em
+
+}
+.time{
+    font-size: .5em
+}
