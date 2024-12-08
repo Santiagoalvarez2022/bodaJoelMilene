@@ -22,6 +22,8 @@ function App() {
     }
   };
 
+
+
   return (
     <div className={style.page}>
 
@@ -51,24 +53,24 @@ function App() {
         <p className={style.eventText}>Viernes 14 de Febrero <br />
         19:00 hrs</p>
         <p className={style.eventPlace}> Ruta nacional 9 1715, Funes, Santa Fe, Arg</p>
-        <button  className={style.buttonPage}> Ver ubicacíon </button>
+        <button   onClick={()=> window.open("https://maps.app.goo.gl/yzUG2ak1v9mftmEK7", "_blank")} className={style.buttonPage}> Ver ubicacíon </button>
 
 
       </section>
       
-      <section className={style.invitationTemple}>
+      <section id='temple' className={style.section}>
         <div className={style.templeContainer}>
           <div className={style.temple}></div>
 
           <div className={style.templeDetail}>
           <p className={style.eventText}>Sábado 15 de <br />Febrero 
           16:00 hrs</p>
-          <p className={style.eventPlace}> Templo de Buenos Aires</p>
+          <p className={style.eventPlace}>Templo de Buenos Aires</p>
           </div>
         </div> 
 
         
-        <button  className={style.buttonPage}> Ver ubicacíon </button>
+        <button   onClick={()=> window.open("https://maps.app.goo.gl/csb9bpcQJNWUZvyV8", "_blank")} className={style.buttonPage}> Ver ubicacíon </button>
 
 
       </section>
@@ -80,7 +82,30 @@ function App() {
         <div className={style.leaveTwo}></div>
       </div>
 
+        <section className={style.section}>
 
+          <p className={style.text}>Estamos felices de que nos acompañes en este gran paso por construir nuestra hogar eterno!</p>
+          <p className={style.text} >Si querés ayudarnos tocá este botón:</p>
+          <div className={style.btnGiftCont}>
+            <div className={style.btnGift}>LISTA DE REGALOS</div>
+          </div>
+          <p className={style.text} >Para confirmar asistencia escribí tu nombre y aparecerá la opción correspondiente a vos. Toca luego de eso el botón para enviar la confirmación.</p>
+
+            <form className={style.guestForm} onSubmit={(e)=>e.preventDefault()}>
+            <input type="text" name="" id="" className={style.inptGuest} placeholder='Nombre y Apellido' />
+            <button   onClick={()=> window.open("https://maps.app.goo.gl/csb9bpcQJNWUZvyV8", "_blank")} className={style.acptInvitation}> Confirmar </button>
+          </form>
+          <p className={style.text}>¡Tu presencia haría de este <br /> día un día mejor!</p>
+          <div className={style.icon}></div>
+        </section>
+ 
+ 
+      
+    </div>
+  )
+}
+
+export default App
 
 
 
@@ -119,10 +144,3 @@ function App() {
         <button className={style.buttonGift}> Lista de regalos </button>
         <button className={style.buttonConfirmation}>Confirmar asistencia</button>
       </section> */}
-      
-    </div>
-  )
-}
-
-export default App
-

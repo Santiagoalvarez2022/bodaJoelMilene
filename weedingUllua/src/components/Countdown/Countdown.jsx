@@ -39,9 +39,9 @@ export default function Countdown() {
 
   return (
     <section className={style.countdownPage}>
-        <p className={style.phrase}>"Te invitamos a celebrar el inicio de nuestro ‘para siempre’."</p>
+        <p className={style.phrase}>"Te invitamos a celebrar el inicio <br /> de nuestro ‘para siempre’."</p>
         <div className={style.chorometer}>
-            <div>{timeLeft.days} <p className={style.time}>días</p></div>
+            <div>{timeLeft.days}  <p className={style.time}>días</p></div>
             <div>{timeLeft.hours}<p className={style.time}>hrs</p></div>
             <div>{timeLeft.minutes}<p className={style.time}>min</p></div>
         </div>
