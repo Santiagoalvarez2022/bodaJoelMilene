@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import style from './App.module.css'
 import Countdown from './components/Countdown/Countdown';
-import WeddingDetail from './components/weddingDetails/WeddingDetail';
+import WeddingDetail from './components/Civil/WeddingDetail';
 import TempleDetail from './components/TempleDetail/TempleDetail';
 import Banner from './components/Banner/Banner';
 

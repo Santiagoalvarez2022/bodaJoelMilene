@@ -1,7 +1,7 @@
 import React from 'react'
 import { useInView } from "react-intersection-observer";
-import style from './weddingD.module.css'
 import ButtonPage from '../ButtonPage/ButtonPage';
+import style from './weddingD.module.css'
  
 export default function WeddingDetail() {
     const { ref, inView } = useInView({
