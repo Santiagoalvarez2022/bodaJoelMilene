@@ -11,7 +11,7 @@
 }
 
 .invitation{
-  height: 80vh; 
+  height: 75vh; 
   width: 100%; 
   padding-top: 2em;
   display: flex; 
@@ -23,7 +23,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover ;
-}
+  background-color:var(--primary-color);
+  margin: 0;
+  border: none;
+  overflow: hidden;
+} 
 
 .names{
   text-align: center;
