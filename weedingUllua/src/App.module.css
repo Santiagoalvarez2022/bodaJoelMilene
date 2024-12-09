@@ -12,17 +12,17 @@
 
 .invitation{
   height: 65vh; 
-  width: 100%;
+  width: 100%; 
   padding-top: 2em;
   display: flex; 
   flex-direction: column;
   color: var(--primary-color);
   font-weight: 600;
 
-  background-image: url('./assets/coupleTwo.png');
+  background-image: url('./assets/photoSabriCuchu.svg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain  ;
+  background-size: cover ;
 }
 
 .names{

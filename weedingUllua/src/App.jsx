@@ -29,11 +29,11 @@ function App() {
 
   return (
     <div className={style.page}>
-      <section>
         <div  className={style.invitation}>
 
-          <h1 className={style.names}>Sabrina y Lucas</h1>
-          <p className={style.merried}>¡Nos casamos!</p>
+          {/* <h1 className={style.names}>Sabrina y Lucas</h1>
+          <p className={style.merried}>¡Nos casamos!</p> */}
+          
         </div>  
  
         
@@ -41,7 +41,6 @@ function App() {
           <p className={style.phrase}>"El principio de una eternidad compartida."</p>
           <h2 className={style.date}>14 . 02 . 2025</h2>
         </div>
-      </section>
 
       <Countdown />
       <WeddingDetail />
