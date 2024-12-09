@@ -4,6 +4,7 @@ import Countdown from './components/Countdown/Countdown';
 import WeddingDetail from './components/Civil/WeddingDetail';
 import TempleDetail from './components/TempleDetail/TempleDetail';
 import Banner from './components/Banner/Banner';
+import FormGuest from './components/formGuest/FormGuest';
 
 function App() {
  
@@ -56,10 +57,7 @@ function App() {
           </div>
           <p className={style.text} >Para confirmar asistencia escribí tu nombre y aparecerá la opción correspondiente a vos. Toca luego de eso el botón para enviar la confirmación.</p>
 
-            <form className={style.guestForm} onSubmit={(e)=>e.preventDefault()}>
-            <input type="text" name="" id="" className={style.inptGuest} placeholder='Nombre y Apellido' />
-            <button   onClick={()=> window.open("https://maps.app.goo.gl/csb9bpcQJNWUZvyV8", "_blank")} className={style.acptInvitation}> Confirmar </button>
-          </form>
+            <FormGuest />
           <p className={style.text}>¡Tu presencia haría de este <br /> día un día mejor!</p>
           <div className={style.icon}></div>
         </section>

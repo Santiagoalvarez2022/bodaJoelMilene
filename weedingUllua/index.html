@@ -28,10 +28,55 @@
     <style>
       body {
         font-family: 'Dancing Script', sans-serif;
+        background:#eae7dd;
+
+      }
+      /* Ocultar el mensaje por defecto */
+      /* Añadir estilos aquí si es necesario */
+      #only-mobile-message {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #4a4a4a;
+        background:#eae7dd;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 1.5em;
+        text-align: center;
+      }
+
+      body.not-mobile #only-mobile-message {
+        display: block;
+      }
+
+      body.not-mobile #root {
+        display: none;
       }
     </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(userAgent) || /iPhone/.test(userAgent) && !window.MSStream) {
+        document.body.classList.add('mobile');
+      } else {
+        document.body.classList.add('not-mobile');
+      }
+    });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const metaTag = document.createElement('meta');
+    metaTag.name = 'google';
+    metaTag.content = 'notranslate';
+    document.head.appendChild(metaTag);
+  });
+  </script>
   </head>
   <body>
+    <div id="only-mobile-message">Esta pagina fue diseñada solo para telefonos celulares</div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
