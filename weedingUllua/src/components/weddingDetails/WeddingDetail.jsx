@@ -1,17 +1,14 @@
 import React from 'react'
 import { useInView } from "react-intersection-observer";
-import style from './weddingDetail.module.css'
+import style from './weddingD.module.css'
 import ButtonPage from '../ButtonPage/ButtonPage';
-
+ 
 export default function WeddingDetail() {
     const { ref, inView } = useInView({
         threshold: 0.6, // Aparece cuando el 20% del elemento es visible
        
       });
-      const { ref:refButton, inView:buttonInView } = useInView({
-        threshold: 0.6, // Aparece cuando el 20% del elemento es visible
-       
-      });
+    ;
 
       const seePlace = () =>  window.open("https://maps.app.goo.gl/yzUG2ak1v9mftmEK7", "_blank")
 
