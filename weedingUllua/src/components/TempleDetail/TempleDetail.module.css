@@ -1,0 +1,70 @@
+
+.section{
+    color: #767969;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .templeContainer{
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;  
+    width: 100%;
+  }
+  
+  .colorHidden{
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: .5em;
+    transition: .5s;
+  
+}
+
+  .templeDetail{
+    transition: .8s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: .5em;
+  }
+  
+
+
+
+  
+  .hiddenTemple {
+    opacity: 0;
+    /* transform: translateY(20px); */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    display: hidden;
+    height: 20vh;
+    transition: .5s;
+
+  }
+  .temple{
+    transition: .5s;
+
+    background-image: url('../../assets/temple.png');
+    background-size: contain;
+    height: 20vh;
+  }
+  
+  
+
+  .eventText{
+    font-size: 1.3em;
+    margin-bottom: 1vh;
+    text-align: center;
+    box-sizing: border-box;
+  
+  }
+  .eventPlace{
+    font-size: .9em;
+    margin-bottom: 3vh;
+    text-align: center;
+  
+  }

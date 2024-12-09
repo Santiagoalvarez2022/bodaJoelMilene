@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import style from './App.module.css'
 import Countdown from './components/Countdown/Countdown';
+import WeddingDetail from './components/weddingDetails/WeddingDetail';
+import TempleDetail from './components/TempleDetail/TempleDetail';
+import Banner from './components/Banner/Banner';
 
 function App() {
  
@@ -22,13 +25,11 @@ function App() {
     }
   };
 
-
+  
 
   return (
     <div className={style.page}>
-
-      <section className={style.fade}>
-
+      <section>
         <div  className={style.invitation}>
 
           <h1 className={style.names}>Sabrina y Lucas</h1>
@@ -43,44 +44,9 @@ function App() {
       </section>
 
       <Countdown />
-
-      <section className={style.weddingDetails}>
-
-        <p className={style.titlePages}>Detalles de la boda</p>
-        <div className={style.container}>
-
-        </div>
-        <p className={style.eventText}>Viernes 14 de Febrero <br />
-        19:00 hrs</p>
-        <p className={style.eventPlace}> Ruta nacional 9 1715, Funes, Santa Fe, Arg</p>
-        <button   onClick={()=> window.open("https://maps.app.goo.gl/yzUG2ak1v9mftmEK7", "_blank")} className={style.buttonPage}> Ver ubicacíon </button>
-
-
-      </section>
-      
-      <section id='temple' className={style.section}>
-        <div className={style.templeContainer}>
-          <div className={style.temple}></div>
-
-          <div className={style.templeDetail}>
-          <p className={style.eventText}>Sábado 15 de <br />Febrero 
-          16:00 hrs</p>
-          <p className={style.eventPlace}>Templo de Buenos Aires</p>
-          </div>
-        </div> 
-
-        
-        <button   onClick={()=> window.open("https://maps.app.goo.gl/csb9bpcQJNWUZvyV8", "_blank")} className={style.buttonPage}> Ver ubicacíon </button>
-
-
-      </section>
-
-
-      <div className={style.banner}>
-        <div className={style.leaveOne}></div>
-        <div className={style.photoBanner}></div>
-        <div className={style.leaveTwo}></div>
-      </div>
+      <WeddingDetail />
+      <TempleDetail />
+      <Banner />
 
         <section className={style.section}>
 
@@ -112,35 +78,3 @@ export default App
 
 
 
-
-
-      {/* 
-      <section className={style.weddingDetails}>
-        <p className={style.titlePages}>Detalles de la boda</p>
-        <div className={style.contIcons}>
-          <div className={style.rings}></div>
-          <div  className={style.copas}></div>
-        </div>
-
-        <p className={style.information}>Viernes 14 de Frebrero <br /> 18:00 hrs </p>
-        <button  className={style.buttonPage}>Ver ubicacíon</button>
-        <div className={style.contIcons}>
-          <div></div>
-          <div></div>
-        </div>
-        <p className={style.information}>Los esperamos el dia
-        14.02.2025 a las 18:00hs en lugar </p>
-        <button  className={style.buttonPage}> Ver ubicacíon </button>
-      </section>
-      <div className={style.imgHorizontal}></div> */}
-
-
-
-{/* 
-
-
-      <section className={style.weddingConfirmation}>
-        <p className={style.information}>mensaje para la lista de regalo</p>
-        <button className={style.buttonGift}> Lista de regalos </button>
-        <button className={style.buttonConfirmation}>Confirmar asistencia</button>
-      </section> */}
