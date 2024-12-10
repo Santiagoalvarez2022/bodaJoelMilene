@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import style from './Gift.module.css'
 import { getGiftList } from '../../services/GiftList'
-import ModalGift from './modalGift'
+import ModalGift from './ModalGift.jsx'
 import { Link } from 'react-router-dom'
 
 
-
+ 
 
 const ItemGift = ({gift,selectItem}) =>{
         console.log(gift);
