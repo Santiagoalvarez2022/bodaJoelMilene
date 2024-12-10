@@ -106,13 +106,13 @@
 
 
 .buttonPage{
-  padding: .5em 1.4em ;
-  font-size: .9em;
-  border-radius: 1em;
-  border: none;
-  color: var(--primary-color);
-  font-weight: 500;
-  background:var(--secondary-color);
+    padding: .5em 1.4em ;
+    font-size: .9em;
+    border-radius: 1em;
+    border: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    background:var(--secondary-color);
 }
 
 
@@ -141,6 +141,7 @@
   background: #e3c36e;
   padding: .8em 1em ;
   color:white;
+  text-decoration: none;
 } 
 
 

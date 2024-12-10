@@ -5,6 +5,7 @@ import WeddingDetail from './components/Civil/WeddingDetail';
 import TempleDetail from './components/TempleDetail/TempleDetail';
 import Banner from './components/Banner/Banner';
 import FormGuest from './components/formGuest/FormGuest';
+import { Link } from 'react-router-dom';
 
 function App() {
  
@@ -53,7 +54,7 @@ function App() {
           <p className={style.text}>Estamos felices de que nos acompañes en este gran paso por construir nuestra hogar eterno!</p>
           <p className={style.text} >Si querés ayudarnos tocá este botón:</p>
           <div className={style.btnGiftCont}>
-            <div className={style.btnGift}>LISTA DE REGALOS</div>
+            <Link to={'/giftList'} className={style.btnGift}>LISTA DE REGALOS</Link>
           </div>
           <p className={style.text} >Para confirmar asistencia escribí tu nombre y aparecerá la opción correspondiente a vos. Toca luego de eso el botón para enviar la confirmación.</p>
 
@@ -62,7 +63,7 @@ function App() {
           <div className={style.icon}></div>
         </section>
  
- 
+     
       
     </div>
   )
