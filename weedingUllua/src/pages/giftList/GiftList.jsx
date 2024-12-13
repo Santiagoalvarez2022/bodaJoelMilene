@@ -2,13 +2,12 @@ import React, { useEffect, useState } from 'react'
 import style from './Gift.module.css'
 import { getGiftList } from '../../services/GiftList'
 import ModalGift from './ModalGift.jsx'
-import { Link } from 'react-router-dom'
-
+import { Link, Navigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
  
 
 const ItemGift = ({gift,selectItem}) =>{
-        console.log(gift);
         
 
     return (
@@ -21,14 +20,27 @@ const ItemGift = ({gift,selectItem}) =>{
 
 
 
-export default function GiftList() {
 
+export default function GiftList() {
+    const navigate = useNavigate()
     const [giftList, setGiftList] = useState([]);
     const [itemSelected,setItemSelected] = useState({});
     const [isOpen,setOpen] = useState(false);
 
+
+    const getListToApi = async() =>{
+        const response = await  getGiftList(navigate)
+        console.log('response en getListToApi  ', response);
+
+        if (response.status === 200) {
+            setGiftList(response.data)
+            return
+        }
+        navigate('/error')
+    }
+
     useEffect(()=>{
-        getGiftList(setGiftList)
+        getListToApi()
     },[])
 
     const selectItem = (item) =>{
@@ -37,7 +49,7 @@ export default function GiftList() {
     }
     
     const handlerCloseModal  = () =>{
-        getGiftList(setGiftList)
+        getGiftList()
         setOpen(false)
     }
 
@@ -59,7 +71,7 @@ export default function GiftList() {
             <Link to={'/'}>
                 <svg className={style.arrowBack} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30" height="30">
                     <circle cx="25" cy="25" r="24" fill="black" />
-                    <polyline points="30,15 20,25 30,35" fill="none" stroke="#a6af9a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    <polyline points="30,15 20,25 30,35" fill="none" stroke="#a6af9a" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
             </Link>
             <div className={style.iconGift}></div>
@@ -71,8 +83,6 @@ export default function GiftList() {
         <div className={style.listContainer}>
             {
                 giftList.length ? giftList.map((gift, index)=>{
-                    console.log("==", gift);
-                    
                     return <ItemGift  
                         key={index}
                         gift={gift}

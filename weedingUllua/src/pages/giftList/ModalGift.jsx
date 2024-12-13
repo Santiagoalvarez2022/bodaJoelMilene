@@ -1,9 +1,9 @@
 import React from 'react'
 import style from './Gift.module.css'
+
+
 export default function ModalGift({isOpen,item,handlerCloseModal}) {
     //validadciones correctas de errors
-
-console.log('item selecionado en modal ', item);
 
 
 
@@ -11,7 +11,7 @@ console.log('item selecionado en modal ', item);
 
 
     if (!isOpen) {
-        return
+        return 
     }
   return (
     <div className={style.modalContainer}>
@@ -19,7 +19,7 @@ console.log('item selecionado en modal ', item);
             <div className={style.headerModal}>
             <svg onClick={()=>handlerCloseModal()} className={style.arrowBack} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30" height="30">
                 <circle cx="25" cy="25" r="24" fill="black" />
-                <polyline points="30,15 20,25 30,35" fill="none" stroke="#a6af9a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <polyline points="30,15 20,25 30,35" fill="none" stroke="#a6af9a" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             </div> 
             <p className={style.itemName}>"{item.item}"</p>

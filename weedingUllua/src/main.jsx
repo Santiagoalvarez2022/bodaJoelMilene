@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import GiftList from './pages/giftList/GiftList.jsx';
+import ErrorPage from './pages/ErrorPage.jsx';
 
 
 const router = createBrowserRouter([
@@ -16,7 +17,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/giftList",
-    element: <GiftList/>,
+    element: <GiftList />,
+  },
+  {
+    path: "/error",
+    element: <ErrorPage />,
   },
 
 ])
