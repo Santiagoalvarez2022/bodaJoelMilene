@@ -22,7 +22,7 @@ export default function TempleDetail() {
         </div>
     </div> 
 
-    <ButtonPage text={'Ver ubicacíon'} func={seePlace} />
+    <ButtonPage text={'Ver Ubicacíon'} func={seePlace} />
 
 
   </section>

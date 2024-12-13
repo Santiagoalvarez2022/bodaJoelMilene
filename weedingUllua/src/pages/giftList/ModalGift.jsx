@@ -21,15 +21,18 @@ console.log('item selecionado en modal ', item);
                 <circle cx="25" cy="25" r="24" fill="black" />
                 <polyline points="30,15 20,25 30,35" fill="none" stroke="#a6af9a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-
-
             </div> 
+            <p className={style.itemName}>"{item.item}"</p>
+            <br />
             <p className={style.msgGift}> Si te gustaria ayudarnos con este regalo por favor ingresa tu nombre</p>
+            <br />
+            {item.link==='no' && <p className={style.link}>Referencia</p> }
             <br />
             <input className={style.input} type="text" placeholder='Nombre y Apellido' />
             <button className={style.btnInput}>Enviar</button>
+
             <br />
-            <p>¡Gracias!</p>
+            <p className={style.msgThankyou}>¡Gracias!</p>
         </div>
     </div>
   )

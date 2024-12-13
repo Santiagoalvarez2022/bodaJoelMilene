@@ -10,7 +10,7 @@ export default function WeddingDetail() {
       });
     ;
 
-      const seePlace = () =>  window.open("https://maps.app.goo.gl/yzUG2ak1v9mftmEK7", "_blank")
+    const seePlace = () =>  window.open("https://maps.app.goo.gl/yzUG2ak1v9mftmEK7", "_blank")
 
   return (
     

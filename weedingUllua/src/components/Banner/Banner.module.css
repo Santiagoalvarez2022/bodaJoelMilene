@@ -1,7 +1,7 @@
 
  
  .banner{
-    margin-top: 10vh;
+    margin-top: 6vh;
     background: #a6af9a;
     display: grid;
     grid-template-columns: .5fr 1fr .5fr;

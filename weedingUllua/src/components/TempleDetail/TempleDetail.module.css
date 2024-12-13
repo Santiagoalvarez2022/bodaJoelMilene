@@ -8,7 +8,7 @@
   
   
   .templeContainer{
-    margin-top: 10vh;
+    margin-top: 6vh;
     display: grid;
     grid-template-columns: .8fr 1.2fr;  
     width: 100%;
@@ -50,7 +50,7 @@
 
     background-image: url('../../assets/temple.png');
     background-size: contain;
-    height: 20vh;
+    height: 22vh;
   }
   
   
@@ -60,7 +60,6 @@
     margin-bottom: 1vh;
     text-align: center;
     box-sizing: border-box;
-  
   }
   .eventPlace{
     font-size: .9em;

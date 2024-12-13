@@ -65,6 +65,8 @@ export default function GiftList() {
             <div className={style.iconGift}></div>
             <p>Lista de Regalos</p>
         </div>
+        <br />
+        <p className={style.msgList}>Si te gustaría ayudarnos con algunos de estos elementos para nuestro hogar selecciona el deseado en la lista</p>
         
         <div className={style.listContainer}>
             {
@@ -80,8 +82,10 @@ export default function GiftList() {
                 : null
             }        
         </div>  
-        
-        <p className={style.alias}>Alias : cuchu.sabri</p>
+        <p className={style.msgList} >Si preferís no llevar el regalo pero si transferirnos podés hacerlo a través de nuestros alias siguientes:</p>
+        <br />
+        <p className={style.alias}>Alias ARS: sabriylucas</p>
+        <p className={style.alias}>Alias USD: sabriylucas.dolarapp</p>
         
         <div className={style.footer}>
             <div className={style.leavesTwo}></div>
