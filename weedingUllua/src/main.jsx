@@ -23,9 +23,8 @@ const router = createBrowserRouter([
     path: "/error",
     element: <ErrorPage />,
   },
-
 ])
- 
+  
 
 
 createRoot(document.getElementById('root')).render(
