@@ -26,7 +26,7 @@ console.log('item selecionado en modal ', item);
             <br />
             <p className={style.msgGift}> Si te gustaria ayudarnos con este regalo por favor ingresa tu nombre</p>
             <br />
-            {item.link==='no' && <p className={style.link}>Referencia</p> }
+            {item.link==='no' && <a href={item.link} className={style.link}>Referencia</a> }
             <br />
             <input className={style.input} type="text" placeholder='Nombre y Apellido' />
             <button className={style.btnInput}>Enviar</button>
