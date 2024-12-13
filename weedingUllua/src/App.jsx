@@ -54,7 +54,7 @@ function App() {
           <p className={style.text}>Estamos felices de que nos acompañes en este gran paso por construir nuestra hogar eterno!</p>
           <p className={style.text} >Si querés ayudarnos tocá este botón:</p>
           <div className={style.btnGiftCont}>
-            <Link to={'/giftList'} className={style.btnGift}>LISTA DE REGALOS</Link>
+            <Link to={'/gifts'} className={style.btnGift}>LISTA DE REGALOS</Link>
           </div>
           <p className={style.text} >Para confirmar asistencia escribí tu nombre y aparecerá la opción correspondiente a vos. Toca luego de eso el botón para enviar la confirmación.</p>
 
