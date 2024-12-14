@@ -4,6 +4,7 @@ import { getGiftList } from '../../services/GiftList'
 import ModalGift from './ModalGift.jsx'
 import { Link, Navigate } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
+import Loader from '../../components/Loader/Loader.jsx'
 
  
 
@@ -26,14 +27,17 @@ export default function GiftList() {
     const [giftList, setGiftList] = useState([]);
     const [itemSelected,setItemSelected] = useState({});
     const [isOpen,setOpen] = useState(false);
-
+    const [loader, setLoader] = useState(false);
 
     const getListToApi = async() =>{
+        setLoader(true)
         const response = await  getGiftList(navigate)
         console.log('response en getListToApi  ', response);
 
         if (response.status === 200) {
             setGiftList(response.data)
+            setLoader(false)
+
             return
         }
         navigate('/error')
@@ -48,17 +52,19 @@ export default function GiftList() {
         setOpen(true)
     }
     
-    const handlerCloseModal  = () =>{
+    const handlerCloseModal  = (setResponseMsg,setInput) =>{
         getGiftList()
         setOpen(false)
+        setResponseMsg('')
+        setInput('')
     }
 
    
     
   return (
     <div className={style.page}>
-
-        <ModalGift  isOpen={isOpen} item={itemSelected} 
+        {loader && <Loader />}
+        <ModalGift  isOpen={isOpen} item={itemSelected} id={itemSelected.id}
         handlerCloseModal={handlerCloseModal}   />
         <div className={style.header}>
            
@@ -83,7 +89,7 @@ export default function GiftList() {
         <div className={style.listContainer}>
             {
                 giftList.length ? giftList.map((gift, index)=>{
-                    return <ItemGift  
+                    return <ItemGift 
                         key={index}
                         gift={gift}
                         selectItem={selectItem}

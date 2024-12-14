@@ -5,7 +5,7 @@ import style from './Countdown.module.css'
 
 export default function Countdown() {
     // const targetDate = new Date('Febreruary 02, 2025 09:00:00').getTime();
-    const targetDate = new Date('2025-02-14T10:00:00').getTime();
+    const targetDate = new Date('2025-02-14T19:00:00Z').getTime();
 
     const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0 });
 

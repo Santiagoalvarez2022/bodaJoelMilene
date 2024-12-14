@@ -5,8 +5,6 @@
     background: #a6af9a;
     display: grid;
     grid-template-columns: .5fr 1fr .5fr;
-    padding-top:    1vh;
-    padding-bottom: 1vh;
     padding-inline: 1em;
     opacity: 1;
     transition: .3s;
@@ -17,9 +15,7 @@
     opacity: 0;
     margin-top: 10vh;
     background: #a6af9a;
-   
-    padding-top:    1vh;
-    padding-bottom: 1vh;
+    
     padding-inline: 1em;
     transition: .3s;
   }
@@ -35,12 +31,17 @@
     height: 22vh;
     opacity: 0;
     transition: 1s;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+
   }
   .photoBanner{
     height: 22vh;
     background-image: url('../../assets/arms.svg');
     background-size: cover;
     transition: 1s;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 
   }
 

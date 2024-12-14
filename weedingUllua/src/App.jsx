@@ -8,24 +8,7 @@ import FormGuest from './components/formGuest/FormGuest';
 import { Link } from 'react-router-dom';
 
 function App() {
- 
-  const addEventToCalendar = () =>{
-    {
-      const title = "Casamiento de Sabri y Lucas";
-      const startDate = "20250214T180000Z"; // 14 de febrero de 2025, 18:00 UTC
-      const endDate = "20250214T200000Z";   // 14 de febrero de 2025, 20:00 UTC
-      const details = "Te invitamos a nuestro casamiento! Esperamos que puedas guardar ese día para que puedas participar";
-      const location = "Calle Falsa 123, Ciudad, País";
-  
-      const url = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
-        title
-      )}&dates=${startDate}/${endDate}&details=${encodeURIComponent(
-        details
-      )}&location=${encodeURIComponent(location)}&sf=true&output=xml`;
-  
-      window.open(url, "_blank");
-    }
-  };
+
 
   
 
@@ -61,6 +44,7 @@ function App() {
             <FormGuest />
           <p className={style.text}>¡Tu presencia haría de este <br /> día un día mejor!</p>
           <div className={style.icon}></div>
+          
         </section>
  
      

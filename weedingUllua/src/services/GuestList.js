@@ -1,26 +1,26 @@
 import axios from 'axios'
 
 
-export const getGuestList = async(setGuests=()=>{}) =>{
-    console.log("get guest list");
+export const getGuestList = async() =>{
     try {
   
     const response = await axios(`${'https://api.sheetbest.com/sheets/11a85dd3-da17-4b8e-983e-7db67b88538a'}?_raw=1`);
-    if (response.status === 200) {
-        //evaluar solo enviar los que cntiene el el valor 'no' en 'confirmed'
-        setGuests(response.data)
-        return 
-    }
+    //filtro por los que ya aceptaron 
+    
+    response.data = response.data.filter(guest => guest.confirmed.trim('') === "no" )   
+     
+    return response;
 
             
     } catch (error) {
-            console.log('Error al hacer peticion de la lista de invitados ', {error:error.message});
+            console.log('Error al hacer peticion de la lista de invitados', {error:error.message});
             return error
     }
     
 }
+
+
 export const confirmGuest = async(id) =>{
-   console.log('id recibido   ', id);
    //hago el cambio porque la api se pasa por uno
    id = id-1
 
