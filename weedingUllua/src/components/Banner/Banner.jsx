@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 
 export default function Banner() {
     const { ref:leaves, inView:leavesInView } = useInView({
-        threshold: 0.2, // Aparece cuando el 20% del elemento es visible
+        threshold: 0.3, // Aparece cuando el 20% del elemento es visible
        
     });
 
