@@ -74,12 +74,12 @@
 
 
 .section{
+
+  margin-top: 2vh;
   color: #767969;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5vh;
-
 }
 
 
