@@ -6,7 +6,6 @@ import { updateItem } from '../../services/GiftList';
 import Loader from '../../components/Loader/Loader';
 
 export default function ModalGift({isOpen,item,id,handlerCloseModal}) { 
-    console.log(id);
     
     //validadciones correctas de errors
     const [inputValue, setInputValue] = useState("");
@@ -33,7 +32,6 @@ export default function ModalGift({isOpen,item,id,handlerCloseModal}) {
     },[])
 
     const sendData = async() =>{
-        console.log('send data, ' , inputValue);
         if (inputValue.trim('')==='') return 
         
         setLoader(true)

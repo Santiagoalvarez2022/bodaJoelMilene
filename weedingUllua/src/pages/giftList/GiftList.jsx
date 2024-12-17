@@ -32,7 +32,6 @@ export default function GiftList() {
     const getListToApi = async() =>{
         setLoader(true)
         const response = await  getGiftList(navigate)
-        console.log('response en getListToApi  ', response);
 
         if (response.status === 200) {
             setGiftList(response.data)

@@ -107,7 +107,6 @@ export default function FormGuest() {
       }
     }
 
-    console.log('lista de invitados ', Guests);
     
 
   return (<>
