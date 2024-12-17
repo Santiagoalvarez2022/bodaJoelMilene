@@ -147,7 +147,7 @@ export default function FormGuest() {
               }
                {selected && <button   onClick={()=> confirmInvitation()} className={style.acptInvitation}> Confirmar </button>
                }
-               {selected &&  <p className={style.guestSelected}>Invitado selecionado <br /> "{input}"</p> }
+               {selected &&  <p className={style.guestSelected}>Invitado seleccionado <br /> "{input}"</p> }
 
           </ul>
           {modal && <Modal  close={closeModal} />}

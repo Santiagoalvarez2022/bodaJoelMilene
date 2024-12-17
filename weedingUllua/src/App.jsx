@@ -34,13 +34,14 @@ function App() {
 
         <section className={style.section}>
 
-          <p className={style.text}>Estamos felices de que nos acompañes en este gran paso por construir nuestra hogar eterno!</p>
+          <p className={style.text}>¡Estamos felices de que nos acompañes en este gran paso por construir nuestro hogar eterno!</p>
           <p className={style.text} >Si querés ayudarnos tocá este botón:</p>
           <div className={style.btnGiftCont}>
             <Link to={'/gifts'} className={style.btnGift}>LISTA DE REGALOS</Link>
           </div>
-          <p className={style.text} >Para confirmar asistencia escribí tu nombre y aparecerá la opción correspondiente a vos. Toca luego de eso el botón para enviar la confirmación.</p>
-
+          <br />
+          <h3>CONFIRMAR ASISTENCIA</h3>
+          <p className={style.text} >Escribí tu nombre y aparecerá la opción correspondiente a vos :</p>
             <FormGuest />
           <p className={style.text}>¡Tu presencia haría de este <br /> día un día mejor!</p>
           <div className={style.icon}></div>
