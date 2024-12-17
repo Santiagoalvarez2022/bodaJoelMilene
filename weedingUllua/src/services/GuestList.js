@@ -8,12 +8,8 @@ export const getGuestList = async() =>{
     //filtro por los que ya aceptaron 
     
     response.data = response.data.filter(guest => guest.confirmed === "no" )   
-    
-    console.log("===============>     ", response.data);
-    
 
     return response;
-
             
     } catch (error) {
             console.log('Error al hacer peticion de la lista de invitados', {error:error.message});
