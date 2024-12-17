@@ -7,8 +7,11 @@ export const getGuestList = async() =>{
     const response = await axios(`${'https://api.sheetbest.com/sheets/11a85dd3-da17-4b8e-983e-7db67b88538a'}?_raw=1`);
     //filtro por los que ya aceptaron 
     
-    response.data = response.data.filter(guest => guest.confirmed.trim('') === "no" )   
-     
+    response.data = response.data.filter(guest => guest.confirmed === "no" )   
+    
+    console.log("===============>     ", response.data);
+    
+
     return response;
 
             
