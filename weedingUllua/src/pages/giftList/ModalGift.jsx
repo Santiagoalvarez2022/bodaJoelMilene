@@ -6,6 +6,7 @@ import { updateItem } from '../../services/GiftList';
 import Loader from '../../components/Loader/Loader';
 
 export default function ModalGift({isOpen,item,id,handlerCloseModal}) { 
+    console.log('item', item);
     
     //validadciones correctas de errors
     const [inputValue, setInputValue] = useState("");
@@ -83,6 +84,8 @@ export default function ModalGift({isOpen,item,id,handlerCloseModal}) {
             </svg>
             </div> 
             <p className={style.itemName}>"{item.item}"</p>
+            <br />
+           {item.description !== 'no' ? <p style={{textAlign:'center'}}>{item.description}</p> : null}
             <br />
             <p className={style.msgGift}>¡Si te gustaría ayudarnos con este regalo por favor ingresa tu nombre!</p>
             <br />
