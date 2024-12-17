@@ -98,7 +98,7 @@ export default function GiftList() {
                 : null
             }        
         </div>  
-        <p className={style.msgList} >Si preferís no llevar el regalo pero si transferirnos podés hacerlo a través de nuestros alias siguientes:</p>
+        <p className={style.msgList} >Si preferís no llevar el regalo pero si transferirnos podés hacerlo a los siguientes alias:</p>
         <br />
         <p className={style.alias}>Alias ARS: sabriylucas</p>
         <p className={style.alias}>Alias USD: sabriylucas.dolarapp</p>

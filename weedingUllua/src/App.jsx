@@ -44,7 +44,9 @@ function App() {
             <FormGuest />
           <p className={style.text}>¡Tu presencia haría de este <br /> día un día mejor!</p>
           <div className={style.icon}></div>
-          
+          <p className={style.text} >Dress Code : Elegante/Formal</p>
+          <br />
+          <br />
         </section>
  
      

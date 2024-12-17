@@ -31,7 +31,7 @@ export default function Modal({close}) {
             <div className={style.iconModal}></div>
             <p className={style.msg}>¡Confirmacíon enviada con exito!</p>
             <div className={style.btnContainer}>
-                <button  className={style.btnModal} onClick={()=>addEventToCalendar()} >Agendar</button>
+                <button  className={style.btnModal} onClick={()=>addEventToCalendar()} >Agendar Fecha</button>
                 <button  className={style.btnModal} onClick={()=>close()}>Volver atras</button>
             </div>
             <div className={style.iconModal}></div>
