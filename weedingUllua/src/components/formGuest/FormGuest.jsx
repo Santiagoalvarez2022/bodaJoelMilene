@@ -18,6 +18,7 @@ export default function FormGuest() {
     //informacion del invitado seleccionado 
     const [modal,setModal] = useState(false)
     const [loader,setLoader] = useState(false)
+    
 
     const [guestSelected, setGuest] = useState()  
     const closeModal = () =>{
@@ -60,8 +61,11 @@ export default function FormGuest() {
       
       setInput(value);
       if(value){
-     
-        let list_options = Guests.filter((guest)=> guest.Invitado.toLocaleLowerCase().includes(value.toLocaleLowerCase()) )
+        
+        let list_options = Guests.filter((guest)=> {
+          
+        return  guest.Invitado.toLowerCase().includes(value.toLowerCase())
+        } )
         setOptions(list_options)
         //mostrar options
         setShhowOptions(true)

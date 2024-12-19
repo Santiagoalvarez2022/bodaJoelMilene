@@ -16,6 +16,8 @@ export default function TempleDetail() {
       <div className={inView ? style.temple : style.hiddenTemple} ></div>
 
       <div className={inView ?  style.templeDetail : style.colorHidden}>
+        <p style={{fontSize:"1em", textAlign:"center"}} >Sellamiento</p>
+        <br />
         <p className={style.eventText}>Sábado 15 de Febrero 
         17:00 hrs</p>
         <p className={style.eventPlace}>Templo de Buenos Aires</p>
