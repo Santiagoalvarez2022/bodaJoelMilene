@@ -52,7 +52,7 @@ export default function GiftList() {
     }
     
     const handlerCloseModal  = (setResponseMsg,setInput) =>{
-        getGiftList()
+        getListToApi()
         setOpen(false)
         setResponseMsg('')
         setInput('')
