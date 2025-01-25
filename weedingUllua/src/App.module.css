@@ -156,3 +156,12 @@
   background-repeat: no-repeat;
   background-size: contain; 
 }
+
+.titlePages{
+  font-size: 1.8em;
+  font-weight: 400;
+  padding-bottom: 1em;
+  color: var(--fourth-color);
+  font-family: "Lora", serif;
+  text-align: center;
+}
