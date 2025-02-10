@@ -3,7 +3,7 @@ import axios from "axios";
 export const getGiftList = async() =>{
     
     try {
-        const response = await axios(`https://api.sheetbest.com/sheets/486c08b4-494d-4c6e-b94a-8e1cd72aa8cd`);
+        const response = await axios(`https://api.sheetbest.com/sheets/53663200-54e6-43a5-a1b8-37aa2faab819`);
         response.data = response.data.filter(e=> e.invitado === 'no')
         return response
     
@@ -19,11 +19,11 @@ export const updateItem = async(id, name) =>{
     
     try {
         //valido que no haylla sido elegido aun, si lo fue envio un mensaje al modal
-        const response = await axios(`https://api.sheetbest.com/sheets/486c08b4-494d-4c6e-b94a-8e1cd72aa8cd/id/${id}`);
+        const response = await axios(`https://api.sheetbest.com/sheets/53663200-54e6-43a5-a1b8-37aa2faab819/id/${id}`);
         
         if (response.data[0].invitado === 'no') {
             //actualizo y envio mensaje de exito
-            const updateGift = await axios.patch(`https://api.sheetbest.com/sheets/486c08b4-494d-4c6e-b94a-8e1cd72aa8cd/id/${id}`,{'invitado':name})
+            const updateGift = await axios.patch(`https://api.sheetbest.com/sheets/53663200-54e6-43a5-a1b8-37aa2faab819/id/${id}`,{'invitado':name})
 
             if (updateGift.status===200){
                 return true 
