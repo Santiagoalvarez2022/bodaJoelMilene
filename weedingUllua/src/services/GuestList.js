@@ -4,7 +4,7 @@ import axios from 'axios'
 export const getGuestList = async() =>{
     try {
   
-    const response = await axios(`${'https://api.sheetbest.com/sheets/29ac42b3-d0cd-4acc-95fe-01a66d057407'}?_raw=1`);
+    const response = await axios(`${'https://api.sheetbest.com/sheets/d4a4af8b-9591-4fbb-8ba2-aa78b498815c'}?_raw=1`);
     //filtro por los que ya aceptaron 
     
     response.data = response.data.filter(guest => guest.confirmed === "no" )   
@@ -27,7 +27,7 @@ export const confirmGuest = async(id) =>{
         //evaluo si ya la acepto?  
 
         //modifico lista
-        const data = await axios.patch(`https://api.sheetbest.com/sheets/29ac42b3-d0cd-4acc-95fe-01a66d057407/${id}`,{confirmed:"confirmado"})
+        const data = await axios.patch(`https://api.sheetbest.com/sheets/d4a4af8b-9591-4fbb-8ba2-aa78b498815c/${id}`,{confirmed:"confirmado"})
         return data
 
     } catch (error) {
