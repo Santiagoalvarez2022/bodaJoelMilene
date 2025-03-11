@@ -2,7 +2,7 @@
  
  .banner{
     margin-top: 6vh;
-    background: #a6af9a;
+    background:black;
     display: grid;
     grid-template-columns: .5fr 1fr .5fr;
     padding-inline: 1em;
@@ -14,21 +14,21 @@
   .bannerHidden{
     opacity: 0;
     margin-top: 10vh;
-    background: #a6af9a;
+    background:black;
     
     padding-inline: 1em;
     transition: .3s;
   }
 
   .photoBanner,.leaveOne,.leaveTwo{
-    background-position: center;
+    background-position: start;
     background-repeat: no-repeat;
     opacity: 1;
   }
 
-  
+   
   .photoHidden{
-    height: 22vh;
+    height: 28vh;
     opacity: 0;
     transition: 1s;
     margin-top: 1vh;
@@ -36,12 +36,10 @@
 
   }
   .photoBanner{
-    height: 22vh;
-    background-image: url('../../assets/arms.svg');
+    height: 28vh;
+    background-image: url('../../assets/banner_photo.svg');
     background-size: cover;
     transition: 1s;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
 
   }
 
@@ -52,13 +50,11 @@
   }
   
   .leaveTwo{
-    background-image: url('../../assets/leaves.png');
     background-position:  top left;
     transition: 1s;
 
   }
   .leaveOne{
-    background-image: url('../../assets/leavesTwo.png');
     background-position:  bottom right;
 
 

@@ -65,13 +65,6 @@ export default function GiftList() {
         {loader && <Loader />}
         <ModalGift  isOpen={isOpen} item={itemSelected} id={itemSelected.id}
         handlerCloseModal={handlerCloseModal}   />
-        <div className={style.header}>
-           
-
-
-            <div className={style.leaves}></div>
-        </div>
-
         <div className={style.contTitle}>
             <Link to={'/'}>
                 <svg className={style.arrowBack} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30" height="30">
@@ -80,7 +73,7 @@ export default function GiftList() {
                 </svg>
             </Link>
             <div className={style.iconGift}></div>
-            <p>Lista de Regalos</p>
+            <p className={style.titleGift}>Lista de Regalos</p>
         </div>
         <br />
         <p className={style.msgList}>Si te gustaría ayudarnos con algunos de estos elementos para nuestro hogar selecciona el deseado en la lista</p>
@@ -99,12 +92,9 @@ export default function GiftList() {
         </div>  
         <p className={style.msgList} >Si preferís no llevar el regalo pero si transferirnos podés hacerlo a los siguientes alias:</p>
         <br />
-        <p className={style.alias}>Alias ARS: sabriylucas</p>
-        <p className={style.alias}>Alias USD: sabriylucas.dolarapp</p>
+        <p className={style.alias}>Alias: bodajoelymile</p>
         
-        <div className={style.footer}>
-            <div className={style.leavesTwo}></div>
-        </div>
+      
     </div> 
   ) 
 }

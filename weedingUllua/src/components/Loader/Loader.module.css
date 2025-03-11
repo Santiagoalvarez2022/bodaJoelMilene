@@ -1,5 +1,5 @@
 .containerLoader{
-    background: #eae7dd;
+    background: var(--primary-color);
     height: 100vh;
     width: 100vw;
     position:fixed;

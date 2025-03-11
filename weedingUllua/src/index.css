@@ -5,10 +5,10 @@
 style={{background:"#e3c36e"}}
 } */
 :root{
-  --primary-color : #eae7dd;
-  --secondary-color :#a6af9a;
+  --primary-color : #2e2e2e;
+  --secondary-color :#f4c211;
+  
   --third-color : #4a4a4a;
-  --fourth-color :#767969;
   --fifth-color :#e3c36e;
 
   margin: 0;

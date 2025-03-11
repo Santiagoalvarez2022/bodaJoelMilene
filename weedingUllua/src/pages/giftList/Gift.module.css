@@ -4,18 +4,10 @@
     flex-direction: column;
     align-items: center;
     font-family: "Ovo", serif;
-    color: var(--fourth-color);
+    background: var(--primary-color);
+    color: #fff;
+    padding: 2em 0;
 }   
-
-
-
-.header{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    width: 100%;
-    padding-left: 2em;
-}
 
 .footer{
     display: flex;
@@ -62,6 +54,7 @@
 
 .alias{
     font-size: 1.2em;
+    color: var(--secondary-color);
 }
 
 .msgList{
@@ -73,10 +66,9 @@
     margin-top: 2vh;
     margin-bottom: 5vh;
     height: 60vh;
-    border: dotted 3px #767969;
     width: 70%;
-    background: #ced5c6;
-    border-radius: 3em;
+    background: #4a4a4a;
+    border-radius: 1em;
     overflow-y: scroll;
     padding-top: 2em;
     scrollbar-width: none; /* Firefox */
@@ -89,19 +81,23 @@
 
 /*item de los regalos*/
 .containerItem{
-    text-align: center;
+    text-align: start;
+
     font-size: 1.2em;
-    padding: .5em 0;
+    padding: .5em 1em;
     cursor: pointer;
     border-bottom: #76796934 solid 2px;
 }
 
-
+.titleGift{
+    color: var(--secondary-color);
+}
 
 /*modal de regalos*/
 
 .modalContainer{
-    background: #eae7dd9f;
+    background: #222221e1;
+
     height: 100vh;
     width: 100vw;
     position:fixed;
@@ -113,8 +109,8 @@
     animation: appear 1s ease-in-out; 
 }
 .modal{ 
-    background:#767969e0;
-    width: 80vw;
+    background:black;
+    width: 90vw;
     box-sizing: border-box;
     padding-inline: 1em;
     border-radius: .5em ;
@@ -163,20 +159,20 @@
     font-size: .9em;
     border-radius: .7em;
     border: none;
-    color:#fff;
+    background: var(--primary-color);
+    color: #fff;
     font-weight: 500;
-    background:var(--secondary-color);
     margin-bottom: 1vh;
     
 }
 
 .arrowBack{
-    fill: #767969;
-    color: #767969;
+    fill:  #2e2e2e;
+    color: #2e2e2e;
 }
 
 circle{
-    fill: #767969;
+    fill: #2e2e2e;
     stroke: #fff;
 }
 

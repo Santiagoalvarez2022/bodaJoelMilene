@@ -4,14 +4,14 @@ import style from './FormGuest.module.css'
 
 export default function Modal({close}) {
   const addEventToCalendar = () => {
-    const title = "Casamiento de Sabri y Lucas";
+    const title = "Casamiento de Joel y Mile";
   
-    // Ajustar las fechas a la zona horaria de Buenos Aires (GMT-3)
-    const startDate = "20250214T190000-0300"; // 14 de febrero de 2025, 19:00 hora local (GMT-3)
-    const endDate = "20250215T020000-0300";   // 15 de febrero de 2025, 02:00 hora local (GMT-3)
+    // Nueva fecha: 29 de agosto de 2025, 09:00 hora local (GMT-3) hasta 30 de agosto de 2025, 09:00 hora local
+    const startDate = "20250829T090000-0300"; // 29 de agosto de 2025, 09:00 AM (GMT-3)
+    const endDate = "20250830T090000-0300";   // 30 de agosto de 2025, 09:00 AM (GMT-3)
   
     const details = "¡Te invitamos a nuestro casamiento! Esperamos que puedas guardar ese día para que puedas participar";
-    const location = "https://maps.app.goo.gl/g27rCFuDBFVnX9fh6";
+    const location = "https://maps.app.goo.gl/snUUCp9DnNnEdKru6";
   
     const url = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
       title
@@ -22,7 +22,6 @@ export default function Modal({close}) {
     window.open(url, "_blank");
     close();
   };
-
 
 
   return (

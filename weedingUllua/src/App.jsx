@@ -16,43 +16,49 @@ function App() {
 
   return (
     <div className={style.page}>
-      <div  className={style.invitation}></div>  
-      <div>
-        <p className={style.phrase}>"El principio de una eternidad compartida."</p>
-        <h2 className={style.date}>14 . 02 . 2025</h2>
-      </div>
-      <Countdown />
-      <br />
-      <br /> 
-      
-      <p className={style.titlePages}>Detalles de la boda</p>
-      <WeddingDetail pin={"https://maps.app.goo.gl/Moz7u6Wf41fTLuGMA"} img_icon={rings_icon} title={'Civil'}  place={'Av. Wheelwright y Pres Roca, Rosario.'} hrs={'11:30 hs'}  />
-      <br /><br /><br />
-      <WeddingDetail  pin={"https://maps.app.goo.gl/yzUG2ak1v9mftmEK7"} img_icon={cops_icon} title={'Fiesta'} place={'Ruta nacional 9 1715, Funes, Santa Fe.'}  hrs={'20:00 hs'}   space={true}/>
+      <div  className={style.invitation}>
+        <div className={style.page_one_msg}>
+          <p>Por fin...</p>
+          <p>¡NOS CASAMOS!</p>
+        </div>
+        <h1 className={style.names}>Joel y Mile</h1>
+      </div>  
 
-      <TempleDetail />
+      <h2 className={style.date}>Viernes 29 de Agosto</h2>
+
+
+      <Countdown />
+      
+
+      <p className={style.titlePages}>Detalles de la boda</p>
+
+      <WeddingDetail pin={"https://maps.app.goo.gl/Fkgvu1aQfeW2TYyD9"} img_icon={rings_icon} title={'Civil'}  place={'Próximamente se informará el horario.'} hrs={''}  />
+      <br />
+      <WeddingDetail  pin={"https://maps.app.goo.gl/snUUCp9DnNnEdKru6"} img_icon={cops_icon} title={'Fiesta'} place={'Maipú 3051, Rosario.'}  hrs={'21:00 hs a 03:30'}   space={true} flex='row'/>
       <Banner />
+
 
       <section className={style.section}>
 
-          <p className={style.text}>¡Estamos felices de que nos acompañes en este gran paso por construir nuestro hogar eterno!</p>
+          <p className={style.text_title}>¡Estamos felices de que nos acompañes en nuestro gran día!</p>
+
           <p className={style.text} >Si querés ayudarnos tocá este botón:</p>
+           <br />
           <div className={style.btnGiftCont}>
-            <Link to={'/gifts'} className={style.btnGift}>LISTA DE REGALOS</Link>
+            <Link to={'/gifts'} className={style.btnGift}>Lista de regalos</Link>
           </div>
-          <br />
-          <h3>CONFIRMAR ASISTENCIA</h3>
-          <p className={style.text} >Escribí tu nombre y aparecerá la opción correspondiente a vos :</p>
-            <FormGuest />
+          <p className={style.text_p}>
+          Para confirmar asistencia escribí tu nombre, una vez que aparezca, seleccionalo. Luego de eso toca el botón para enviar la confirmación.
+          </p>       
+         
+          <FormGuest />
           <p className={style.text}>¡Tu presencia haría de este <br /> día un día mejor!</p>
-          <div className={style.icon}></div>
-          <p className={style.text} >Dress Code : Elegante/Formal</p>
-          <br />
-          <br />
+          <div className={style.contIcon}>
+            <div className={style.icon}></div>
+            <div className={style.icon}></div>
+            <div className={style.icon}></div>
+          </div>
       </section>
- 
-     
-      
     </div>
   )
 }

@@ -1,30 +1,29 @@
 .countdownPage{
-    background: var(--secondary-color);
-    padding: 2em;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5em;
-    font-family: "Lora", serif;
+    gap: 1em;
+
 
 }
 
 .phrase{
-    font-size: 1.3em;
+    font-size: 1.5em;
     text-align: center;
     color: #fff;
-
+    font-family: "Inria Serif", serif;
+    font-weight: 600;
 }
 
 .chorometer{
     text-align: center;
     display: flex;
-    gap: 1em;
-    color: var(--third-color);
+    gap: .4em;
+    color: var(--secondary-color);
     font-weight: 500;
-    font-size: 2em
-
+    font-size: 2.2em;
+    font-family: "Sanchez", serif;
 }
 
 .time{ 

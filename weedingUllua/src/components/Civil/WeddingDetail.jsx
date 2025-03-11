@@ -23,13 +23,13 @@ export default function WeddingDetail({ pin , img_icon, title, space, hrs,place}
         {space && <br />}
         <div style={bgImg} className={ inView ? style.container : style.hiddenContainer}></div>
 
-        <div  className={!inView && style.colorHidden}>
-          <p className={style.eventText }>Viernes 14 de Febrero <br />
+        <div style={{width:'80%'}} className={!inView && style.colorHidden}>
+          <p className={style.eventText }>Viernes 29 de Agosto <br />
           {hrs}</p>
           <p className={style.eventPlace}>{place}</p>
+       <ButtonPage  text={'Ver ubicación'} func={seePlace}/>
         </div>
 
-       <ButtonPage  text={'Ver Ubicacíon'} func={seePlace}/>
   </section>
   )
 }

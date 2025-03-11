@@ -5,35 +5,34 @@
     /* transform: translateY(20px); */
     transition: opacity 0.5s ease, transform 0.5s ease;
     display: hidden;
-    color: var(--primary-color);
     height: 10vh;
     transition: .5s;
 
   }
   .title{
-    font-size: 2em;
+    font-size: 3.5em;
     font-family: "Italianno", serif;
     font-weight: 500;
     font-style: normal;
+    color: #fff ;
   }
     
   .container{
     transition: .5s;
     background-size: contain;
-    height: 10vh;
+    height: 7vh;
     width: 100%;
   } 
   
   .weddingDetails{
     opacity: 1;
-  
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--fourth-color);
-    font-family: "Lora", serif;
     /* transform: translateY(0); */
     transition: opacity 0.5s ease, transform 0.5s ease; 
+
   }
   
   
@@ -43,7 +42,6 @@
   .container,.temple{
     background-position: center;
     background-repeat: no-repeat;
-  
   }
   
 
@@ -53,19 +51,23 @@
     transition: .8s;
   }
   
+  .eventPlace,.eventText{
+    color:  var(--secondary-color);
+    width: 100%;
+  }
+
   .eventText{
-    font-size: 1.3em;
+    font-size: 1.7em;
     margin-top: 1em;
-    margin-bottom: 3vh;
-    text-align: center;
+    text-align: start;
     box-sizing: border-box;
     transition: 2s;
   
   }
   .eventPlace{
     font-size: .9em;
-    margin-bottom: 3vh;
-    text-align: center;
+    margin-bottom: 1vh;
+    text-align: start;
     transition: .8s;
   
   }

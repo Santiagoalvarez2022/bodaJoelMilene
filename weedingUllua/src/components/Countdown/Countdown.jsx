@@ -5,7 +5,7 @@ import style from './Countdown.module.css'
 
 export default function Countdown() {
     // const targetDate = new Date('Febreruary 02, 2025 09:00:00').getTime();
-    const targetDate = new Date('2025-02-14T19:00:00Z').getTime();
+    const targetDate = new Date('2025-08-29T21:00:00Z').getTime();
 
     const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0 });
 
@@ -39,10 +39,10 @@ export default function Countdown() {
 
   return (
     <section className={style.countdownPage}>
-        <p className={style.phrase}>"Te invitamos a celebrar el inicio <br /> de nuestro ‘para siempre’."</p>
+        <p className={style.phrase}>¿Cuánto falta?</p>
         <div className={style.chorometer}>
-            <div className={style.count} >{timeLeft.days}  <p className={style.time}>días</p></div>
-            <div className={style.count} >{timeLeft.hours}<p className={style.time}>hrs</p></div>
+            <div className={style.count} >{timeLeft.days}  <p className={style.time}>días</p></div>.
+            <div className={style.count} >{timeLeft.hours}<p className={style.time}>hrs</p></div>.
             <div className={style.count} >{timeLeft.minutes}<p className={style.time}>min</p></div>
         </div>
     </section>
