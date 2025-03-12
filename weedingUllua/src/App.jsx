@@ -48,8 +48,11 @@ function App() {
           </div>
           <p className={style.text_p}>
           Para confirmar asistencia escribí tu nombre, una vez que aparezca, seleccionalo. Luego de eso toca el botón para enviar la confirmación.
-          </p>       
-         
+          </p>   
+          <br />
+          <p className={style.text_p}>
+          Precio : $46.500
+          </p>   
           <FormGuest />
           <p className={style.text}>¡Tu presencia haría de este <br /> día un día mejor!</p>
           <div className={style.contIcon}>
