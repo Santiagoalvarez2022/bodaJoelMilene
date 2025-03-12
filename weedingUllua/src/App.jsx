@@ -7,8 +7,7 @@ import Banner from './components/Banner/Banner';
 import FormGuest from './components/formGuest/FormGuest';
 import { Link } from 'react-router-dom';
 import rings_icon from './assets/rings_icons.svg' 
-import cops_icon from './assets/cups_icons.svg'
- 
+import cake_icon from './assets/cake.svg'
 function App() { 
 
 
@@ -34,7 +33,7 @@ function App() {
 
       <WeddingDetail pin={"https://maps.app.goo.gl/Fkgvu1aQfeW2TYyD9"} img_icon={rings_icon} title={'Civil'}  place={'Próximamente se informará el horario.'} hrs={''}  />
       <br />
-      <WeddingDetail  pin={"https://maps.app.goo.gl/snUUCp9DnNnEdKru6"} img_icon={cops_icon} title={'Fiesta'} place={'Maipú 3051, Rosario.'}  hrs={'21:00 hs a 03:30'}   space={true} flex='row'/>
+      <WeddingDetail  pin={"https://maps.app.goo.gl/snUUCp9DnNnEdKru6"} img_icon={cake_icon} title={'Fiesta'} place={'Maipú 3051, Rosario.'}  hrs={'21:00 hs a 03:30'}   space={true} flex='row'/>
       <Banner />
 
 

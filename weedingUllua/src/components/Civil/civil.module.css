@@ -22,7 +22,24 @@
     background-size: contain;
     height: 7vh;
     width: 100%;
-  } 
+  }
+
+  
+.hiddenContainer {
+  opacity: 0;
+  /* transform: translateY(20px); */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  display: hidden;
+  height: 7vh;
+  transition: .5s;
+
+}
+  .containerZ{ 
+    transition: .5s;
+    background-size: contain;
+    height: 7vh;
+    width: 20%;
+  }
   
   .weddingDetails{
     opacity: 1;
@@ -34,12 +51,21 @@
     transition: opacity 0.5s ease, transform 0.5s ease; 
 
   }
-  
+  .headerDetail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }  
+  .headerDetailZ{
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+  }  
   
   
 
-  
-  .container,.temple{
+  .container,.containerZ,.temple{
     background-position: center;
     background-repeat: no-repeat;
   }
