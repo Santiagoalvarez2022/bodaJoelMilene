@@ -51,8 +51,14 @@ function App() {
           </p>   
           <br />
           <p className={style.text_p}>
-          Precio : $46.500
-          </p>   
+          Precio : $50.000
+          </p>
+          <br />
+          <p className={style.text_p}>
+            Vestimenta Semi formal/ formal
+            <br />
+          "Los colores blancos o nudes son propiedad exclusiva de la novia 🤭"
+          </p>     
           <FormGuest />
           <p className={style.text}>¡Tu presencia haría de este <br /> día un día mejor!</p>
           <div className={style.contIcon}>
