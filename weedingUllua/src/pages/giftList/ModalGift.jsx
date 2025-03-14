@@ -6,7 +6,6 @@ import { updateItem } from '../../services/GiftList';
 import Loader from '../../components/Loader/Loader';
 
 export default function ModalGift({isOpen,item,id,handlerCloseModal}) { 
-    console.log('item', item);
     
     //validadciones correctas de errors
     const [inputValue, setInputValue] = useState("");
