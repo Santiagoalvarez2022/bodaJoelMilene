@@ -11,7 +11,7 @@ export default function Modal({close}) {
     const endDate = "20250830T090000-0300";   // 30 de agosto de 2025, 09:00 AM (GMT-3)
   
     const details = "¡Te invitamos a nuestro casamiento! Esperamos que puedas guardar ese día para que puedas participar";
-    const location = "https://maps.app.goo.gl/snUUCp9DnNnEdKru6";
+    const location = "https://maps.app.goo.gl/v4TgRqkqxhSTQp3X7";
   
     const url = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
       title

@@ -33,7 +33,7 @@ function App() {
 
       <WeddingDetail pin={"https://maps.app.goo.gl/Fkgvu1aQfeW2TYyD9"} img_icon={rings_icon} title={'Civil'}  place={'Próximamente se informará el horario.'} hrs={''}  />
       <br />
-      <WeddingDetail  pin={"https://maps.app.goo.gl/snUUCp9DnNnEdKru6"} img_icon={cake_icon} title={'Fiesta'} place={'Maipú 3051, Rosario.'}  hrs={'21:00 hs a 03:30'}   space={true} flex='row'/>
+      <WeddingDetail  pin={"https://maps.app.goo.gl/v4TgRqkqxhSTQp3X7"} img_icon={cake_icon} title={'Fiesta'} place={'Blvd. Seguí 931, Rosario.'}  hrs={'21:00 hs a 04:00 hs'}   space={true} flex='row'/>
       <Banner />
 
 
@@ -51,7 +51,9 @@ function App() {
           </p>   
           <br />
           <p className={style.text_p}>
-          Precio : $50.000
+          Menores de 0 a 3 años $3.000 (seguro) <br />
+          Niños de 4 a 10 años $19.000 <br />
+          Adultos $38.000
           </p>
           <br />
           <p className={style.text_p}>
