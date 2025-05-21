@@ -51,9 +51,9 @@ function App() {
           </p>   
           <br />
           <p className={style.text_p}>
-          Menores de 0 a 3 años $3.000 (seguro) <br />
-          Niños de 4 a 10 años $19.000 <br />
-          Adultos $38.000
+          Menores de 0 a 3 años $5.000 (seguro) <br />
+          Niños de 4 a 10 años $22.000 <br />
+          Adultos $44.000
           </p>
           <br />
           <p className={style.text_p}>
