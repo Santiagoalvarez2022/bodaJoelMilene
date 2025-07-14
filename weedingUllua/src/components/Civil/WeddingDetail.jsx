@@ -25,7 +25,6 @@ const HeaderDetailZ = ({bgImg,inView,title}) =>{
 export default function WeddingDetail({ pin , img_icon, title, space, hrs,place}) {
     const { ref, inView } = useInView({
         threshold: 0.6, // Aparece cuando el 20% del elemento es visible
-       
       });
     ;
     const seePlace = () =>  window.open(pin, "_blank")

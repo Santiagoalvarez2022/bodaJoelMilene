@@ -8,11 +8,9 @@ import FormGuest from './components/formGuest/FormGuest';
 import { Link } from 'react-router-dom';
 import rings_icon from './assets/rings_icons.svg' 
 import cake_icon from './assets/cake.svg'
+
+
 function App() { 
-
-
-  
-
   return (
     <div className={style.page}>
       <div  className={style.invitation}>
@@ -31,7 +29,7 @@ function App() {
 
       <p className={style.titlePages}>Detalles de la boda</p>
 
-      <WeddingDetail pin={"https://maps.app.goo.gl/Fkgvu1aQfeW2TYyD9"} img_icon={rings_icon} title={'Civil'}  place={'Próximamente se informará el horario.'} hrs={''}  />
+      <WeddingDetail pin={"https://maps.app.goo.gl/Fkgvu1aQfeW2TYyD9"} img_icon={rings_icon} title={'Civil'}  place={'Av. Uriburu 637, Rosario - Por favor estar 20 minutos antes.'} hrs={'10:00hs'}  />
       <br />
       <WeddingDetail  pin={"https://maps.app.goo.gl/v4TgRqkqxhSTQp3X7"} img_icon={cake_icon} title={'Fiesta'} place={'Blvd. Seguí 931, Rosario.'}  hrs={'21:00 hs a 04:00 hs'}   space={true} flex='row'/>
       <Banner />
